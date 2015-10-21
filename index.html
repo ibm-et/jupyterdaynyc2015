@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Jupyter Day NYC 2015</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen.css">
+</head>
+<body class="list">
+	
+	<header class="caption">
+		<h1>Jupyter Incubator: What's Cooking?</h1>
+		<p>Peter Parente (<a href="http://twitter.com/parente">@parente</a>), Developer in <a href="http://blog.ibmjstart.net">IBM Cloud Emerging Technology</a></p>
+	</header>
+
+	<section class="slide cover" id="cover"><div>
+		<h2>Jupyter Incubator: What's Cooking?</h2>
+		<p>Peter Parente (<a href="http://twitter.com/parente">@parente</a>), Developer in <a href="http://blog.ibmjstart.net">IBM Cloud Emerging Technology</a></p>
+		<style>
+			#cover {
+				background-color: #fff;
+				color:#000;
+			}
+			#cover h2 {
+				margin:125px 0 0;
+				text-align:center;
+				font-size:70px;
+			}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				font-style:italic;
+				font-size:20px;
+			}
+			#cover p a {
+				color:#000;
+			}
+		</style>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Greetings!</h2>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Let's talk about jupyter-incubator.</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Rundown</h2>
+		<ul>
+			<li>Jupyter Subprojects</li>
+			<li>Projects in jupyter-incubation</li>
+			<li>Collaboration opportunities</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>First off, a clarification</h2>
+		<figure>
+			<blockquote>
+				<p>There are two ways that new Subprojects are created:</p>
+				<ol>
+					<li>Direct Subproject creation.</li>
+					<li>Incorporation of an existing external Subproject.</li>
+				</ol>
+			</blockquote>
+			<figcaption><a href="https://github.com/jupyter/governance/blob/master/newsubprojects.md#new-subproject-process">New Subproject Process, Jupyter Governance</a></figcaption>
+		</figure>
+		<p>Every new Jupyter Subproject <strong>does not</strong> have to go through the incubator!</p>
+	</div></section>	
+
+	<section class="slide"><div>
+		<h2>When to incubate</h2>
+		<figure>
+			<blockquote>
+				<ul>
+					<li>Significant unanswered technical questions or uncertainties that require exploration.</li>
+					<li>Entirely new directions, scopes or ideas that haven't been vetted with the community.</li>
+					<li>Significant, already existing code bases where it is not clear how the Subproject will integrate with the rest of Jupyter.</li>
+				</ul>
+			</blockquote>
+			<figcaption><a href="https://github.com/jupyter/governance/blob/master/newsubprojects.md#new-subproject-process">New Subproject Process, Jupyter Governance</a></figcaption>
+		</figure>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Another clarification</h2>
+		<figure>
+			<blockquote>
+				<p>If a Subproject team knows from the start that it would eventually like its Subproject to be part of the official Jupyter organization, it <strong>can</strong> be incubated in the jupyter-incubator organization.</p>
+			</blockquote>
+			<figcaption><a href="https://github.com/jupyter/governance/blob/master/newsubprojects.md#new-subproject-process">New Subproject Process, Jupyter Governance</a></figcaption>
+		</figure>
+		<p>You are <strong>not</strong> required to incubate in github.com/jupyter-incubator!</p>
+	</div></section>
+
+	<section class="slide rules"><div>
+		<h2>tl;dr</h2>
+		<p>Project in scope + proposer on Council + Council agrees <br /> &rarr; create new github.com/jupyter repo</p>
+		<p>Project mature in open source + want to move to github.com/jupyter <br /> &rarr; proposal for incorporation</p>
+		<p>Project is immature + want association with Jupyter <br /> &rarr; proposal for incubation under github.com/jupyter-incubator</p>
+		<p>Project under incubation matures <br /> &rarr; proposal for incorporation</p>
+
+		<style>
+		.rules p {
+			margin-bottom: 1em;
+			line-height: 1.5em;
+		}
+		</style>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Enough! What's cooking?</h2>
+	</div></section>
+
+	<section class="slide menu"><div>
+		<h2>Menu</h2>
+		<ul>
+			<li class="fade">contentmanagement</li>
+			<li>dashboards</li>
+			<li>declarativewidgets</li>
+			<li>kernel_gateway</li>
+			<li class="fade">sparkmagic</li>
+			<li class="fade">traittypes</li>
+		</ul>
+		<p>And, of course, there are many other awesome new projects outside jupyter-incubator (e.g., binder, bqplot)</p>
+
+		<style>
+		.menu .fade {
+			opacity: 0.4;
+		}
+		.menu p {
+			font-size: 0.5em;
+		}
+		</style>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Dashboards</h2>
+		<ul>
+			<li><strong>Goal</strong>: ease friction between notebook use and app dev</li>
+			<li><strong>Features</strong>: arrange output areas, capture layout, deploy apps</li>
+			<li><strong>Recent focus</strong>: tutorials, demos, defects since open sourcing</li>
+			<li><strong>Long term</strong>: maturation of deployment (Thebe, kernel gateway, tmpnb / binder)</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Declarative Widgets</h2>
+		<ul>
+			<li><strong>Goal</strong>: exploit web components ecosystem to ease the creation of rich interactive areas</li>
+			<li><strong>Features</strong>: declarative syntax for function / data access, simple templates and data bindings, installation of 3rd party widgets</li>
+			<li><strong>Recent focus</strong>: set and watch data from kernel language, import progress, error handling and display</li>
+			<li><strong>Long term</strong>: more languages, better dev experience, clear identification of core modules (comm, manager, model, etc.)</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Kernel Gateway</h2>
+		<ul>
+			<li><strong>Goal</strong>: Websocket interface to kernels</li>
+			<li><strong>Features</strong>: /api/kernels, /api/kernelspecs</li>
+			<li><strong>Recent focus</strong>: Python reference implementation, hack notebook to launch remote kernels</li>
+			<li><strong>Long term</strong>: use by dashboards, Thebe, Notebook, new kernel consumers, cloud kernel providers?</li>
+		</ul>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Anything strike your fancy?</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Collaboration topics</h2>
+		<ul>
+			<li>Dashboard, widget, kernel use cases</li>
+			<li>Secure, scalable dashboard deployment</li>
+			<li>Higher-order widgets</li>
+			<li>Declarative widget underpinnings for other langs</li>
+			<li>Kernel gateway security</li>
+			<li>Alternative kernel gateway implementations (e.g., Go)</li>
+			<li>"Very remote" kernel support from Notebooks</li>
+			<li>Content management PRs against notebook</li>
+		</ul> 
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Let's chat!</h2>
+	</div></section>
+	
+	<p class="badge"><a href="https://github.com/shower/shower">Fork me on Github</a></p>
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+</body>
+</html>
