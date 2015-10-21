@@ -137,24 +137,58 @@
 		</style>
 	</div></section>
 
-	<section class="slide"><div>
+	<section class="slide dashboards"><div>
 		<h2>Dashboards</h2>
 		<ul>
-			<li><strong>Goal</strong>: ease friction between notebook use and app dev</li>
+			<li><strong>Goal</strong>: ease transition from notebook to just-good-enough apps</li>
 			<li><strong>Features</strong>: arrange output areas, capture layout, deploy apps</li>
 			<li><strong>Recent focus</strong>: tutorials, demos, defects since open sourcing</li>
 			<li><strong>Long term</strong>: maturation of deployment (Thebe, kernel gateway, tmpnb / binder)</li>
 		</ul>
+		<img src="images/dashboard-stream.png" alt="Streaming meetup dashboard layout" />
+		<img src="images/dashboard-community.png" alt="Community sentiment dashboard preview "/>
+		<style>
+		.dashboards ul {
+			width: 50%;
+			line-height: 1.5em;
+		}
+		.dashboards img:nth-of-type(1) {
+			position: absolute;
+			bottom: 0;
+			width: 45%;
+			z-index: 1;
+			left: 50%;
+		}
+		.dashboards img:nth-of-type(2) {
+			position: absolute;
+			bottom: -150px;
+			width: 45%;
+			left: 55%;
+		}
+		</style>
 	</div></section>
 
-	<section class="slide"><div>
+	<section class="slide widgets"><div>
 		<h2>Declarative Widgets</h2>
 		<ul>
-			<li><strong>Goal</strong>: exploit web components ecosystem to ease the creation of rich interactive areas</li>
-			<li><strong>Features</strong>: declarative syntax for function / data access, simple templates and data bindings, installation of 3rd party widgets</li>
-			<li><strong>Recent focus</strong>: set and watch data from kernel language, import progress, error handling and display</li>
-			<li><strong>Long term</strong>: more languages, better dev experience, clear identification of core modules (comm, manager, model, etc.)</li>
+			<li><strong>Goal</strong>: ease creation of interactive areas by exploiting web components ecosystem</li>
+			<li><strong>Features</strong>: use declarative syntax, write simple templates / bindings, install 3rd party widgets</li>
+			<li><strong>Recent focus</strong>: set / watch data from kernel, import progress, error logging</li>
+			<li><strong>Long term</strong>: more languages, better dev experience, identification of core modules</li>
 		</ul>
+		<img src="images/widgets-map.png" alt="Declarative widgets in a notebook screenshot" />
+		<style>
+		.widgets ul {
+			width: 55%;
+			line-height: 1.5em;
+		}
+		.widgets img:nth-of-type(1) {
+			position: absolute;
+			bottom: 0px;
+			width: 45%;
+			left: 55%;
+		}
+		</style>
 	</div></section>
 
 	<section class="slide"><div>
@@ -165,6 +199,11 @@
 			<li><strong>Recent focus</strong>: Python reference implementation, hack notebook to launch remote kernels</li>
 			<li><strong>Long term</strong>: use by dashboards, Thebe, Notebook, new kernel consumers, cloud kernel providers?</li>
 		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Kernel Gateway</h2>
+		<img width="100%" src="https://raw.githubusercontent.com/jupyter-incubator/kernel_gateway/master/etc/tmpnb_kernel_gateway.png"  alt="Kernel gateway deployment diagram" />
 	</div></section>
 
 	<section class="slide shout"><div>
@@ -185,8 +224,19 @@
 		</ul> 
 	</div></section>
 
-	<section class="slide shout"><div>
+	<section class="slide shout contact"><div>
 		<h2>Let's chat!</h2>
+		<p>Today or virtually: @jtyberg, @lbustelo, @parente, @vinomaster</p>
+
+		<style>
+		.contact p {
+			text-align: center;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		</style>
 	</div></section>
 	
 	<p class="badge"><a href="https://github.com/ibm-et/jupyterdaynyc2015">Fork me on Github</a></p>
