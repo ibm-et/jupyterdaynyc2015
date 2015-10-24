@@ -39,19 +39,21 @@
 		</style>
 	</div></section>
 
-	<section class="slide shout"><div>
+	<section class="slide" id="us"><div>
 		<h2>Greetings!</h2>
-	</div></section>
-
-	<section class="slide shout"><div>
-		<h2>Let's talk about jupyter-incubator.</h2>
+		<ul>
+			<li>I'm a member of the IBM Cloud Emerging Technology team</li>
+			<li>We innovate, incubate, and integrate disruptive tech</li>
+			<li>We've been IPythonites / Jovyans for ~3 years</li>
+			<li>We've recently become more active in the community</li>
+		</ul>
 	</div></section>
 
 	<section class="slide"><div>
 		<h2>Rundown</h2>
 		<ul>
 			<li>Jupyter Subprojects</li>
-			<li>Projects in jupyter-incubation</li>
+			<li>Some projects in incubation</li>
 			<li>Collaboration opportunities</li>
 		</ul>
 	</div></section>
@@ -143,7 +145,7 @@
 			<li><strong>Goal</strong>: ease transition from notebook to just-good-enough apps</li>
 			<li><strong>Features</strong>: arrange output areas, capture layout, deploy apps</li>
 			<li><strong>Recent focus</strong>: tutorials, demos, defects since open sourcing</li>
-			<li><strong>Long term</strong>: maturation of deployment (Thebe, kernel gateway, tmpnb / binder)</li>
+			<li><strong>Long term</strong>: maturation of deployment (jupyter-js-services, kernel gateway, tmpnb / binder)</li>
 		</ul>
 		<img src="images/dashboard-stream.png" alt="Streaming meetup dashboard layout" />
 		<img src="images/dashboard-community.png" alt="Community sentiment dashboard preview "/>
@@ -194,10 +196,10 @@
 	<section class="slide"><div>
 		<h2>Kernel Gateway</h2>
 		<ul>
-			<li><strong>Goal</strong>: Websocket interface to kernels</li>
-			<li><strong>Features</strong>: /api/kernels, /api/kernelspecs</li>
+			<li><strong>Goal</strong>: Headless HTTP/Websocket access to kernels</li>
+			<li><strong>Features</strong>: /api/kernels, /api/kernelspecs, token auth</li>
 			<li><strong>Recent focus</strong>: Python reference implementation, hack notebook to launch remote kernels</li>
-			<li><strong>Long term</strong>: use by dashboards, Thebe, Notebook, new kernel consumers, cloud kernel providers?</li>
+			<li><strong>Long term</strong>: use by dashboards, Thebe, Notebook, new kernel consumers, cloud kernel providers</li>
 		</ul>
 	</div></section>
 
@@ -215,12 +217,12 @@
 		<ul>
 			<li>Dashboard, widget, kernel use cases</li>
 			<li>Secure, scalable dashboard deployment</li>
-			<li>Higher-order widgets</li>
-			<li>Declarative widget underpinnings for other langs</li>
-			<li>Kernel gateway security</li>
-			<li>Alternative kernel gateway implementations (e.g., Go)</li>
+			<li>Higher-order widgets (wizards?)</li>
+			<li>Declarative widget underpinnings for other langs (Julia, R?)</li>
+			<li>Alternative kernel gateway implementations (Go)</li>
+			<li>"Deeper" kernel gateway APIs (notebook functions as REST?)</li>
 			<li>"Very remote" kernel support from Notebooks</li>
-			<li>Content management PRs against notebook</li>
+			<li>Porting of incubation concepts to PhosphorJS</li>
 		</ul> 
 	</div></section>
 
